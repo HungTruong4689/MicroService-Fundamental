@@ -2,11 +2,13 @@ const express = require('express')
 
 const app = express()
 
-app/get('/posts', (req,res)=>{
+const posts = {}
 
+app.get('/posts', (req,res)=>{
+    res.send(posts)
 })
 
-app/get('/posts', (req,res)=>{
+app.post('/posts', (req,res)=>{
     
 })
 app.listen(4000, ()=>{
